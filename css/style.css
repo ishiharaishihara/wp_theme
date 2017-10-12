@@ -1,0 +1,48 @@
+body
+{
+    background-color:#eee;
+}
+.container
+{
+    max-width:1000px;
+}
+nav >  div
+{
+    float:left;
+}
+.gazou
+{
+    background-image:url(../imgs/tanbo.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    max-width:1000px;
+    max-height:calc(1000px * 768 / 1366);
+    height:calc(100vw * 768 / 1366);
+        background-position:center;
+    
+}
+figure > img
+{
+    width:100%;
+    max-width:416px;
+}
+@media screen and (max-width:991px)
+{
+    .gazou
+    {
+        max-height:calc(767px * 768 / 1366);
+    }
+}
+@media screen and (max-width:767px)
+{
+    .gazou
+    {
+        height:calc(767px * 768 / 1366);
+        background-size:cover;
+    }
+    figure
+    {
+        text-align:center;
+    }
+}
+

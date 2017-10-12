@@ -1,0 +1,26 @@
+[
+    {
+        "id":1
+        ,"title":"Sample post"
+        ,"text":"I can't abide these Jawas.Disgusting creatures.Go on, go on."
+        ,"img":"../imgs/flower.jpg"
+    }
+    ,{
+        "id":2
+        ,"title":"This is a third blog article"
+        ,"text":"This is the third article excerpt."
+        ,"img":"../imgs/flower.jpg"
+    }
+    ,{
+        "id":3
+        ,"title":"This is a second blog article"
+        ,"text":"This is the second article excerpt."
+        ,"img":"../imgs/flower.jpg"
+    }
+    ,{
+        "id":4
+        ,"title":"This is a sample blog article"
+        ,"text":"This is the first article excerpt."
+        ,"img":"../imgs/flower.jpg"
+    }
+]
