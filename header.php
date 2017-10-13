@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
 	<title>sample</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 
 	<!-- Meta -->
 	<meta name="description" content="石郷祐介のサイトです。">
@@ -19,7 +20,7 @@
 </head>
 <body>
     <div class="container">
-        <head>
+        <header>
             <h4>A sample site using gatsby-source-wordpress</h4>
             <div>Data feched from a site hosted on wordpress.com</div>
             <nav>
@@ -29,27 +30,5 @@
                 <div>-</div>
                 <div><a href="">About</a></div>
             </nav>
-        </head>
-        <div class="content">
-            <h1>Home page</h1>
-            <div class="gazou"></div>
-            <div class="caption">
-                Welcome on this sample site that demonstrates using Gatsby-source-wordpress <br>
-           
-            </div>
-        </div>
-        <div class="content">
-            <h2>The latests blog posts</h2>
-            Filter by category:All - Awesome - Fantastic - Non classe - Wonderfl - Reset filter
-            <div class="posts">
-            </div>
-        </div>
-        <footer>This is a sample footer.</footer>
-    </div>
-
-
-	<script src="jquery-2.1.3.min.js"></script>
-	<script src="./bootstrap/js/bootstrap.min.js"></script>
-	<script src="main.js"></script>
-</body>
-</html>
+            <?php wp_head(); ?>
+        </header>

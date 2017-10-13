@@ -1,3 +1,11 @@
+/*
+    Theme Name:サンプルテーマ
+    Theme URL:http;//nichibi-ogaki.sakura.ne.jp/ishihara
+    Author:Tatsuki Ishihara
+    Author URL:http://school.ac.jp
+    Description:サンプルサイトです
+    Version:1.0
+*/
 body
 {
     background-color:#eee;
@@ -12,7 +20,7 @@ nav >  div
 }
 .gazou
 {
-    background-image:url(../imgs/tanbo.jpg);
+    background-image:url(./imgs/tanbo.jpg);
     background-repeat:no-repeat;
     background-size:contain;
     max-width:1000px;

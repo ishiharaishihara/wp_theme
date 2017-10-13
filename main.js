@@ -1,6 +1,6 @@
 $(function()
 {
-    $.getJSON('./flower.json',function(data)
+    $.getJSON('<?php bloginfo('template_directory'); ?>//flower.json',function(data)
     {
         var len = data.length;
         var post = $('.posts')
