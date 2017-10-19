@@ -28,7 +28,7 @@
                 <div>-</div>
                 <div><a href="">Sample page</a></div>
                 <div>-</div>
-                <div><a href="">About</a></div>
+                <div><a href="about/">About</a></div>
             </nav>
             <?php wp_head(); ?>
         </header>

@@ -12,36 +12,24 @@
             Filter by category:All - Awesome - Fantastic - Non classe - Wonderfl - Reset filter
             <div class="posts">
                     <div class="row">
+                    <?php
+                        if (have_posts()):
+                            while (have_posts()):
+                                the_post();
+                    ?>
                         <figure class = "col-sm-4">
                             <img src = "<?php bloginfo('template_directory'); ?>/imgs/flower.jpg">
+                            <?php echo get_the_date('Y/m/d');?>
                             <figcaption>
-                                <h3>Sample post</h3>
-                                I can't abide these Jawas.Disgusting creatures.Go on, go on.
+                                <h3><?php the_title() ?></h3>
+                                <?php the_excerpt() ?>
+                                <a href=<?php the_permalink(); ?>>readmore</a>
                             </figcaption>
                         </figure>
-                        <figure class = "col-sm-4">
-                            <img src = "<?php bloginfo('template_directory'); ?>/imgs/flower.jpg">
-                            <figcaption>
-                                <h3>This is a third blog article</h3>
-                                This is the third article excerpt.
-                            </figcaption>
-                        </figure>
-                        <figure class = "col-sm-4">
-                            <img src = "<?php bloginfo('template_directory'); ?>/imgs/flower.jpg">
-                            <figcaption>
-                                <h3>This is a second blog article</h3>
-                                This is the second article excerpt.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="row">
-                        <figure class = "col-sm-4">
-                            <img src="<?php bloginfo('template_directory'); ?>/imgs/flower.jpg">
-                            <figcaption>
-                                <h3>This is a sample blog article</h3>
-                                This is the first article excerpt.
-                            </figcaption>
-                        </figure>
+                    <?php
+                         endwhile;
+                     endif;
+                    ?>
                     </div>
             </div>
         </div>
